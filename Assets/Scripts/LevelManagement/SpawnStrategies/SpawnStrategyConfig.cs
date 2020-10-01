@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Game.Scripts.LevelManagement;
+using ExternalTools.Scripts;
+using LevelManagement;
+using LevelManagement.Presets;
 using QFramework.Modules.QConfig.Scripts;
 using UnityEngine;
 
@@ -14,10 +16,11 @@ namespace Game.Scripts.Spawning
         [SerializeField] PresetsManager presetManager;
         [SerializeField] Container defaultElement;
 
+        public Vector3 spawnDirectionVector;
         public float distanceBetweenPresets = 2;
         public float startingHeight = 10;
         public float playerSpeed = 2;
-        [Range(0, 1)] public float customPresetSpawnChance;
+        [Range(0, 1)] public float customPresetSpawnChance = 1;
         [Range(0, 1)] public float defaultElementSpawnChance = .3f;
 
         Dictionary<int, List<Preset>> cachedPresets = new Dictionary<int, List<Preset>>();

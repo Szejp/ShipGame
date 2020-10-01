@@ -5,9 +5,11 @@ using UnityEngine.Assertions;
 
 namespace LevelManagement
 {
-    public class LevelManager
+    [CreateAssetMenu(fileName = "LevelManager", menuName = "Game/Config/LevelManagement/LevelManager")]
+    public class LevelManager : ScriptableObject
     {
-        readonly LevelManagerConfig config;
+        [SerializeField]
+        LevelManagerConfig config;
         
         public int CurrentLevel
         {
@@ -32,11 +34,6 @@ namespace LevelManagement
         }
 
         public static event Action<int> OnLevelChanged;
-
-        public LevelManager(LevelManagerConfig config)
-        {
-            this.config = config;
-        }
 
         public void SetLevel(int level)
         {

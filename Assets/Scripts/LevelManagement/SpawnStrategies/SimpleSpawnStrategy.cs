@@ -1,9 +1,9 @@
 ﻿using System;
-using Config;
+using Controllers;
 using Game.Scripts.Spawning;
 using LevelManagement;
 using LevelManagement.Presets;
-using QFramework.Helpers.Spawning;
+using QFramework.GameModule.GameTools.ObjectPool;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -14,12 +14,11 @@ namespace Game.Scripts.LevelManagement
         public class SimpleSpawnStrategy : MonoBehaviour
         {
             [SerializeField] SpawnStrategyConfig config;
-            [SerializeField] GameConfig gameConfig;
+            [SerializeField] LevelManager levelManager;
 
             static bool isSpawning;
 
-            Spawner spawner;
-            LevelManager levelManager;
+            ISpawner spawner;
             float playerHeight;
             float lastSize;
             float spawnedheight;
@@ -35,8 +34,8 @@ namespace Game.Scripts.LevelManagement
 
             void Awake()
             {
-                spawner = GameContext.Spawner;
-                levelManager = GameContext.LevelManager;
+                spawner = GameMaster.Instance.Spawner;
+                EnableSpawning(true);
             }
 
             void Update()
@@ -53,12 +52,12 @@ namespace Game.Scripts.LevelManagement
                         Spawn(config.GetPortalContainer());
                         EnableSpawning(false);
                     }
-                    else if (ShouldSpawnFuelPreset())
-                    {
-                        SpawnCustomPreset(p => p.additionalTypes.isFuel);
-                        LastHeight += spawnedheight;
-                        lastFuelSpawnHeight = LastHeight;
-                    }
+//                    else if (ShouldSpawnFuelPreset())
+//                    {
+//                        SpawnCustomPreset(p => p.additionalTypes.isFuel);
+//                        LastHeight += spawnedheight;
+//                        lastFuelSpawnHeight = LastHeight;
+//                    }
                     else if (ShouldSpawnCustomPreset())
                     {
                         SpawnCustomPreset();
@@ -81,7 +80,7 @@ namespace Game.Scripts.LevelManagement
                 {
                     lastSize = spawned.GetYSize();
                     spawnedheight = lastSize + config.distanceBetweenPresets;
-                    spawned.transform.position = new Vector3(0, LastHeight + spawnedheight, 0);
+                    spawned.transform.position = config.spawnDirectionVector.normalized * (LastHeight + spawnedheight);
                 }
             }
 
@@ -95,11 +94,6 @@ namespace Game.Scripts.LevelManagement
             {
                 var variable = Random.Range(0, 1f);
                 return variable < config.customPresetSpawnChance;
-            }
-
-            bool ShouldSpawnFuelPreset()
-            {
-                return playerHeight - lastFuelSpawnHeight > gameConfig.distanceBetweenFuels;
             }
         }
     }

@@ -1,49 +1,56 @@
 ﻿using Interfaces;
+using LevelManagement;
 using QFramework.GameModule.GameTools.ObjectPool;
 using QFramework.Helpers;
 using QFramework.Helpers.Spawning;
 using UnityEngine;
 
-namespace Controllers {
-	public class GameMaster : Singleton<GameMaster> {
+namespace Controllers
+{
+    public class GameMaster : Singleton<GameMaster>
+    {
+        [SerializeField] private Player _player;
 
-		[SerializeField]
-		private Player _player;
-		private IMovementController movementController;
-		private IScoreController scoreController;
-		private ISpawner spawner;
+        [SerializeField] LevelManagerConfig levelManagerConfig;
 
-		public ISpawner Spawner {
-			get {
-				if (spawner == null)
-					spawner = new Spawner();
-				return spawner;
-			}
-		}
+        private IMovementController movementController;
+        private IScoreController scoreController;
+        private ISpawner spawner;
 
-		public IScoreController ScoreController {
-			get {
-				if (scoreController == null)
-					scoreController = new ScoreController();
-				return scoreController;
-			}
-		}
+        public ISpawner Spawner
+        {
+            get
+            {
+                if (spawner == null)
+                    spawner = new Spawner();
+                return spawner;
+            }
+        }
 
-		public IMovementController MovementController {
-			get {
-				return movementController;
-			}
-		}
+        public IScoreController ScoreController
+        {
+            get
+            {
+                if (scoreController == null)
+                    scoreController = new ScoreController();
+                return scoreController;
+            }
+        }
 
-		public Player player {
-			get {
-				return _player;
-			}
-		}
+        public IMovementController MovementController
+        {
+            get { return movementController; }
+        }
 
-		protected override void Awake() {
-			base.Awake();
-			movementController = new MovementController(player.plane);
-		}
-	}
+        public Player player
+        {
+            get { return _player; }
+        }
+
+        protected override void Awake()
+        {
+            base.Awake();
+            movementController = new MovementController(player.plane);
+        }
+    }
 }
