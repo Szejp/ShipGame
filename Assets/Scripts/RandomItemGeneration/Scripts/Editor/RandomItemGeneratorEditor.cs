@@ -10,6 +10,7 @@ public class RandomItemGeneratorEditor : Editor
     {
         RandomItemGenerator generator = (RandomItemGenerator) target;
         generator.enableGeneration = GUILayout.Toggle(generator.enableGeneration, "GenerationEnabled");
+        generator.generateInGame = GUILayout.Toggle(generator.generateInGame, "GenerateInGame");
 
         var itemsListSize = generator.items.Length;
         itemsListSize = EditorGUILayout.IntField("List Size", itemsListSize);

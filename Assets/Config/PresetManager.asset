@@ -34,3 +34,12 @@ MonoBehaviour:
       isFuel: 0
       isShooter: 0
     pickedCount: 0
+  - container: {fileID: 3301644322941282530, guid: b30c9d9aa0f23044884f0d9ea1727818, type: 3}
+    disabled: 0
+    spawnThisOnly: 0
+    singleSpawn: 0
+    levelsRange: {x: 0, y: 200}
+    additionalTypes:
+      isFuel: 0
+      isShooter: 0
+    pickedCount: 0

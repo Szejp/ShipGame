@@ -5,9 +5,14 @@ using UnityEngine;
 public class RandomItemGenerator : MonoBehaviour
 {
     public bool enableGeneration = true;
-    public GameObject[] items;
+    public bool generateInGame = false;
+    public GameObject[] items = new GameObject[] {};
 
     GameObject spawnedObj;
+    
+    void OnEnable(){
+        Generate();
+    }
 
     public void Generate()
     {

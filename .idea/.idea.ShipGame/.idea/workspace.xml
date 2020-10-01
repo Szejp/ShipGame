@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0c9754d4-3b3d-41af-8cca-f0dce63ef7d3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/3D/PiotrekImport/03_brama.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ArtAssets/3D/PiotrekImport/03_brama.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/3D/PiotrekImport/03_kolumna.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ArtAssets/3D/PiotrekImport/03_kolumna.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/3D/PiotrekImport/03_ruina-kolumna.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ArtAssets/3D/PiotrekImport/03_ruina-kolumna.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/3D/PiotrekImport/03_ruina-linia kolumn.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ArtAssets/3D/PiotrekImport/03_ruina-linia kolumn.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/3D/PiotrekImport/03_ruina-pomnik.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ArtAssets/3D/PiotrekImport/03_ruina-pomnik.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ArtAssets/3D/PiotrekImport/03_swiatynia.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ArtAssets/3D/PiotrekImport/03_swiatynia.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Capsule.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Capsule.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Config/PresetManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Config/PresetManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cube.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cube.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Item (2).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Item (2).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/MonKey Commander/Editor/Settings/MonKey Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/MonKey Commander/Editor/Settings/MonKey Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SimplePlane3D.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SimplePlane3D.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RandomItemGeneration/Container.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomItemGeneration/Container.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RandomItemGeneration/Scripts/Editor/RandomItemGeneratorEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomItemGeneration/Scripts/Editor/RandomItemGeneratorEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RandomItemGeneration/Scripts/RandomItemGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomItemGeneration/Scripts/RandomItemGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sphere.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sphere.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/RandomItemGeneration/Scripts/RandomItemGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RandomItemGeneration/Scripts/Editor/RandomItemGeneratorEditor.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1iIDdEJ1fRjCnJ6b38J8a45huqm" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

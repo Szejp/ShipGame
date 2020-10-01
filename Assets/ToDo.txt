@@ -1,0 +1,4 @@
+- znieść całą grę do poziomu 0 
+- dodać teren na poziomie 0
+- podnieść trochę playera i dac mu ograniczenie ruchu w osi Y
+- losowe generowanie terenu w oparciu o elementy na całej dostępnej przestrzeni
